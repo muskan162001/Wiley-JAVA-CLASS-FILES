@@ -13,8 +13,8 @@ FROM
     customers;
 ORDER BY
     customerName;
-END$$
-DELIMITER;
+END$$;
+DELIMITER
 
 
 --For All Products

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background-color: lightgrey;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .navbar-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      background-color: black;
+    }
+    
+    .navbar {
+      display: flex;
+      align-items: center;
+    }
+    
+    .navbar-item {
+      padding: 5px;
+      color: white;
+    }
+    
+    .image {
+      width: 100%;
+      height: 50vh;
+      background-image: url('img1.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+    
+    .heading {
+      text-align: center;
+      padding: 20px;
+      font-size: 24px;
+      font-weight: bold;
+    }
+    
+    .content {
+      text-align: center;
+      padding: 20px;
+      font-size: 18px;
+    }
+    
+    .image-container {
+      display: flex;
+      justify-content: space-between;
+      margin: 20px;
+    }
+    
+    .image-container img {
+      width: 24%;
+      height: auto;
+    }
+    
+    .text-container {
+      display: flex;
+      justify-content: space-between;
+      margin: 20px;
+      font-size: 18px;
+    }
+    
+    .text-container p {
+      width: 48%;
+      text-align: justify;
+    }
+    
+    .image-description-container {
+      display: flex;
+      justify-content: space-between;
+      margin: 20px;
+    }
+    
+    .image-description-container .image-with-text-container {
+      display: flex;
+      align-items: center;
+      width: 48%;
+    }
+    
+    .image-description-container .image-with-text-container img {
+      width: 100%;
+      height: auto;
+    }
+    
+    .image-description {
+      margin-left: 20px;
+      font-size: 20px;
+      color: #555;
+    }
+    
+    .footer {
+      background-color: black;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      font-size: 18px;
+    }
+    
+    /* Responsive Styles */
+    @media screen and (max-width: 768px) {
+      .navbar-container {
+        flex-direction: column;
+        align-items: flex-end;
+      }
+      
+      .navbar {
+        margin-bottom: 10px;
+      }
+      
+      .navbar-right {
+        margin-top: 10px;
+      }
+      
+      .image-container,
+      .text-container,
+      .image-description-container {
+        flex-wrap: wrap;
+      }
+      
+      .image-container img,
+      .text-container p,
+      .image-description-container .image-with-text-container {
+        width: 100%;
+      }
+      
+      .text-container p {
+        margin-bottom: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar-container">
+    <div class="navbar navbar-left">
+      <div class="navbar-item">Navbar 1</div>
+    </div>
+  
+    <div class="navbar navbar-right">
+      <div class="navbar-item">Navbar 2</div>
+      <div class="navbar-item">Navbar 3</div>
+      <div class="navbar-item">Navbar 4</div>
+    </div>
+  </div>
+  
+  <div class="image"></div>
+  
+  <div class="heading">
+    HEADING SECTION
+  </div>
+  
+  <div class="content">
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus at molestias, eveniet labore cumque laboriosam atque doloremque aliquid in, adipisci soluta quis ad. Fugiat maxime eaque consectetur voluptatem. Sequi pariatur quia esse, delectus enim sed obcaecati ab sunt, ea iste possimus asperiores expedita harum doloribus, temporibus nulla natus laboriosam itaque facere. Totam, soluta itaque architecto dolores facilis veniam quidem deserunt tempora quos, harum voluptatibus dolorem exercitationem, ratione blanditiis ad quis expedita eaque. Laboriosam, reprehenderit?</p>
+  </div>
+  
+  <div class="image-container">
+    <img src="img2.jpg" alt="Image 1">
+    <img src="img3.jpg" alt="Image 2">
+    <img src="img4.jpg" alt="Image 3">
+    <img src="img5.jpg" alt="Image 4">
+  </div>
+  
+  <div class="text-container">
+    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam doloremque modi officia in blanditiis officiis. Voluptatibus facilis eius temporibus incidunt optio similique ratione amet quaerat dolor non, ullam accusamus alias aliquid id repellendus? Earum consectetur beatae magnam error cumque vero.</P>
+    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam doloremque modi officia in blanditiis officiis. Voluptatibus facilis eius temporibus incidunt optio similique ratione amet quaerat dolor non, ullam accusamus alias aliquid id repellendus? Earum consectetur beatae magnam error cumque vero.</P>
+
+</div>
+  
+  <div class="image-description-container">
+    <div class="image-with-text-container">
+      <img src="img6.jpg" alt="Image 5">
+      <div class="image-description">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt harum facere quas.</p>
+      </div>
+    </div>
+    
+    <div class="image-with-text-container">
+      <img src="img7.jpg" alt="Image 6">
+      <div class="image-description">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla illum dolorem eligendi?</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="footer">
+    This is the footer of this one page created by Muskan Jain as Wiley First Daily Assignment for HTML practice 
+  </div>
+</body>
+</html>
